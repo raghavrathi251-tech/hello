@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Theobroma | Food of the Gods</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-primary-fixed": "#2b1611",
+              "on-error-container": "#93000a",
+              "on-tertiary-fixed-variant": "#4c4542",
+              "primary-fixed": "#ffdad2",
+              "surface-container-lowest": "#ffffff",
+              "tertiary-fixed": "#ece0dc",
+              "surface-container-highest": "#e5e2dd",
+              "on-secondary": "#ffffff",
+              "surface": "#fcf9f4",
+              "tertiary-container": "#403936",
+              "on-tertiary": "#ffffff",
+              "surface-dim": "#dcdad5",
+              "secondary-fixed": "#ffdcbe",
+              "surface-container-high": "#ebe8e3",
+              "surface-tint": "#755750",
+              "secondary-container": "#fdb56c",
+              "surface-variant": "#e5e2dd",
+              "on-background": "#1c1c19",
+              "on-secondary-container": "#774401",
+              "on-secondary-fixed-variant": "#693c00",
+              "surface-container": "#f0ede9",
+              "surface-container-low": "#f6f3ee",
+              "primary": "#361f1a",
+              "on-secondary-fixed": "#2c1600",
+              "tertiary-fixed-dim": "#cfc4c0",
+              "background": "#fcf9f4",
+              "inverse-primary": "#e5beb5",
+              "surface-bright": "#fcf9f4",
+              "inverse-surface": "#31302d",
+              "error": "#ba1a1a",
+              "inverse-on-surface": "#f3f0eb",
+              "primary-container": "#4e342e",
+              "primary-fixed-dim": "#e5beb5",
+              "on-error": "#ffffff",
+              "on-primary-fixed-variant": "#5c403a",
+              "tertiary": "#292421",
+              "on-primary-container": "#c19c94",
+              "on-tertiary-container": "#aca29f",
+              "secondary-fixed-dim": "#ffb870",
+              "on-tertiary-fixed": "#201a18",
+              "secondary": "#885210",
+              "on-surface-variant": "#504442",
+              "outline-variant": "#d4c3bf",
+              "on-primary": "#ffffff",
+              "outline": "#827471",
+              "on-surface": "#1c1c19",
+              "error-container": "#ffdad6"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif"],
+              "body": ["Plus Jakarta Sans"],
+              "label": ["Plus Jakarta Sans"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "1rem", "xl": "1.25rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .font-serif { font-family: 'Noto Serif', serif; }
+      .font-sans { font-family: 'Plus Jakarta Sans', sans-serif; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-sans antialiased">
+<!-- Top Navigation -->
+<nav class="fixed top-0 w-full z-50 bg-[#fcf9f4]/80 dark:bg-[#1c1c19]/80 backdrop-blur-md shadow-[0_12px_40px_rgba(54,31,26,0.06)]">
+<div class="flex justify-between items-center px-8 py-6 max-w-screen-2xl mx-auto">
+<div class="text-2xl font-serif text-[#361f1a] dark:text-[#fcf9f4] tracking-tighter">Theobroma</div>
+<div class="hidden md:flex items-center space-x-12">
+<a class="text-[#827471] dark:text-[#d4c3bf] font-sans uppercase tracking-widest text-[10px] hover:text-[#361f1a] dark:hover:text-[#ffffff] transition-all duration-300" href="#">Menu</a>
+<a class="text-[#827471] dark:text-[#d4c3bf] font-sans uppercase tracking-widest text-[10px] hover:text-[#361f1a] dark:hover:text-[#ffffff] transition-all duration-300" href="#">About</a>
+<a class="text-[#361f1a] dark:text-[#ffffff] border-b-2 border-[#361f1a] pb-1 font-sans uppercase tracking-widest text-[10px]" href="#">MOA Location</a>
+</div>
+<div class="flex items-center space-x-6 text-[#4E342E] dark:text-[#ece0dc]">
+<button class="scale-95 duration-200 ease-in-out hover:text-[#361f1a]">
+<span class="material-symbols-outlined" data-icon="shopping_bag">shopping_bag</span>
+</button>
+<button class="scale-95 duration-200 ease-in-out hover:text-[#361f1a]">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+</button>
+</div>
+</div>
+</nav>
+<main class="pt-24">
+<!-- MOA Announcement Banner -->
+<div class="bg-primary-container text-on-primary-container py-3 overflow-hidden whitespace-nowrap">
+<div class="flex items-center justify-center space-x-8 animate-pulse">
+<span class="text-[10px] uppercase tracking-[0.3em] font-semibold">Now Open at MOA</span>
+<span class="material-symbols-outlined text-sm">stars</span>
+<span class="text-[10px] uppercase tracking-[0.3em] font-semibold">Visit us at the Main Mall</span>
+<span class="material-symbols-outlined text-sm">stars</span>
+<span class="text-[10px] uppercase tracking-[0.3em] font-semibold">Grand Opening Special Inside</span>
+</div>
+</div>
+<!-- Hero Section -->
+<section class="relative h-[870px] flex items-center px-8 md:px-20 overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Signature Brownie" class="w-full h-full object-cover brightness-75" data-alt="Close-up of a decadent dark chocolate brownie with sea salt" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB71xK5a7QPUHaSDqoijE-OLMYO9jQR53fx5s6mRjyuIas5ZLHgsbGv5tGP2dRnBfeENNDQwM_duLDocnLlzxBcMl_w8IEBbcXrPMcsd2FyLIQz5s_FvH8Dv4ZSP4jI8amlzZn1pXO9qtjxmUOzLYku1zoaROdBBBGVkdySQYVA_3xxApDKfZgB1DfjMse203_znn2KIi6DNAb9zTCDMgUPAZOQYYPshiGCf0n2FGOgBNY0rdDv-H61RlDhmkkIxEtT9vdoosNXqWk"/>
+<div class="absolute inset-0 bg-gradient-to-r from-primary/60 to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-2xl text-white">
+<span class="font-sans text-xs uppercase tracking-[0.4em] mb-4 block text-tertiary-fixed">Est. 2004</span>
+<h1 class="font-serif italic text-6xl md:text-8xl leading-tight tracking-tight mb-8">Food of the Gods</h1>
+<p class="font-sans text-lg opacity-90 mb-10 leading-relaxed max-w-lg">Experience the artisanal alchemy of pure cacao and traditional French techniques. Our signature brownies are more than a treat; they are a ritual.</p>
+<div class="flex space-x-4">
+<button class="bg-primary hover:bg-primary-container text-on-primary px-10 py-4 rounded-lg font-sans text-sm tracking-widest transition-all duration-300 shadow-xl">EXPLORE MENU</button>
+<button class="border border-white/30 backdrop-blur-sm text-white px-10 py-4 rounded-lg font-sans text-sm tracking-widest hover:bg-white hover:text-primary transition-all duration-300">OUR STORY</button>
+</div>
+</div>
+</section>
+<!-- Our Story / Asymmetric Bento Grid -->
+<section class="py-28 px-8 max-w-screen-2xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+<div class="md:col-span-5 relative">
+<div class="aspect-[4/5] rounded-xl overflow-hidden shadow-2xl transform md:-rotate-2">
+<img alt="Pâtisserie Craft" class="w-full h-full object-cover" data-alt="Pastry chef dusting cocoa powder on artisanal brownies" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrDZdufAkX249xicVPe3YTtcCTYNq9cHCEIxEc4aJQh6I-OZiI5XLLTxYGkDW32hUG7-FX5Yo3aejZbeBlD5dJZG7qbp1t8w6LrIjdbzlLKH1K344KXVBe6jB7kPvub95olUlTxtzVLKz4h2sa5rHU74cAECLGQd0CZJXAy5XPH6Hsqd9Vv82O_oBqiiOqGCmMLlkBVeoAt2X1H774nWbn_dR80n36hUx9_Hh_i7AV2usdyn2FT_cEpB8AUMNXYEdn3J9WAiMnDkg"/>
+</div>
+<div class="absolute -bottom-10 -right-10 w-48 h-48 rounded-xl overflow-hidden shadow-2xl hidden md:block border-8 border-surface transform rotate-3">
+<img alt="Cacao Pods" class="w-full h-full object-cover" data-alt="Raw cacao beans and chocolate shavings on a marble slab" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2KHF9DPlP1iNPiRv1WkObyfxdPw93DITDU-2OX4PUzpmlcgQcETl4ViWwu97U_DNAZHYQ2HlYXIMb4XYrFyUzQzCkalq4-H_4mNo2Dj3aUdbvb89e9KDqX6MP4Rd8WhVVzBSjcRMZ7tnxtv-kkmKA74R_w4ZmJ2ISEKGShtSDTZOk4kVm6Rw_d9oz1ZoHcxFOPjXQ-sB-at7GWkPwrzbfPU8wF6oQqkme-HhwCqXae0Ce-jZRunWQ25e61o5NNkagFR1V7aMfGwQ"/>
+</div>
+</div>
+<div class="md:col-span-6 md:col-start-7 space-y-8">
+<div class="space-y-2">
+<span class="font-sans text-xs uppercase tracking-[0.2em] text-outline">The Heritage</span>
+<h2 class="font-serif italic text-5xl text-primary">A Devotion to the Bean</h2>
+</div>
+<p class="font-sans text-on-surface-variant leading-loose text-lg">
+                        Named after 'Theobroma Cacao', the scientific name for the cocoa tree, our journey began with a simple obsession: to create the world's most evocative chocolate experience. Every piece is hand-crafted using heritage recipes, sourced from single-origin estates that respect both the earth and the artisan.
+                    </p>
+<div class="pt-4">
+<a class="inline-flex items-center space-x-4 group" href="#">
+<span class="font-sans text-sm font-bold tracking-widest text-primary border-b-2 border-primary-container pb-1">DISCOVER OUR PROCESS</span>
+<span class="material-symbols-outlined transition-transform group-hover:translate-x-2">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Signature Brownies Showcase / Horizontal Scroll or Layout -->
+<section class="bg-surface-container py-28 overflow-hidden">
+<div class="max-w-screen-2xl mx-auto px-8">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+<div class="space-y-4">
+<span class="font-sans text-xs uppercase tracking-[0.2em] text-outline">The Collection</span>
+<h2 class="font-serif italic text-5xl text-primary">Signature Brownies</h2>
+</div>
+<p class="max-w-md text-on-surface-variant font-sans italic">"A symphony of textures—the crackle of a paper-thin crust giving way to a heart of molten gold."</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Product 1 -->
+<div class="group cursor-pointer">
+<div class="aspect-square bg-surface-container-low rounded-xl overflow-hidden mb-6 relative">
+<img alt="Overload Brownie" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Rich triple chocolate fudge brownie with ganache drizzle" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB761HMcG1l71MzHLATsT2XqRepIFm6_VKGqVMu2aTPnZ4UqPwJFRkI2JIwemxMaNoCiyFjH8_MpshOJC_p9WFEKJkU8dtZWFOgdYPMJIs_Pgj3dMpGlIZxsZ_N-1a5vR3NJWqhujjzsAAel_MvMSyAS0Yt8zVDTGd_lL20OViYb1o86NfCey1CxUjEWW9LrtRZUrEXK28uiLHhB5GWSd9c_j-9TgZGhtamOB6aV5cuVyHIl_PJ2KgqcubVykJa5MsTpxkhXsJbYvY"/>
+<div class="absolute top-4 right-4">
+<span class="bg-tertiary-fixed text-on-tertiary-fixed text-[10px] px-3 py-1 rounded-full uppercase tracking-widest font-bold shadow-sm">Bestseller</span>
+</div>
+</div>
+<h3 class="font-serif text-2xl text-primary mb-2">The Moa Overload</h3>
+<div class="flex justify-between items-center">
+<span class="font-sans text-sm text-on-surface-variant">Intense Dark Ganache &amp; Walnut</span>
+<span class="font-sans font-bold text-primary">₱180</span>
+</div>
+</div>
+<!-- Product 2 -->
+<div class="group cursor-pointer translate-y-8">
+<div class="aspect-square bg-surface-container-low rounded-xl overflow-hidden mb-6 relative">
+<img alt="Red Velvet Brownie" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Red velvet brownie with white chocolate chunks" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC85MbfYFoeRP2frBFGtzZ1NDCAO6pV-69nW9TpuFVJynUtw8INOlshc8Ad77iBbbDIYC20-F0Ofn2F97Malk1uIVVIZc7tfoZsgcVPhYeCPJbC4qbfQUx_uH5flq6HrYiNlQdpfPC8EDHP63171MhIpfD1V0jVxQO3bnj5oPjFaxEbbc-Y9feD-VSFKEY5ff3bVSH5lDfDGvfAzVWi8lUYJbLSP8SWuIB0zFE7b3iWmMgI8rLJAQpdpMEbNvLHLaJOkdm8qJjXo9I"/>
+</div>
+<h3 class="font-serif text-2xl text-primary mb-2">Crimson Velvet</h3>
+<div class="flex justify-between items-center">
+<span class="font-sans text-sm text-on-surface-variant">White Choco &amp; Cream Swirl</span>
+<span class="font-sans font-bold text-primary">₱165</span>
+</div>
+</div>
+<!-- Product 3 -->
+<div class="group cursor-pointer">
+<div class="aspect-square bg-surface-container-low rounded-xl overflow-hidden mb-6 relative">
+<img alt="Sea Salt Brownie" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Dark chocolate brownie topped with flaky Maldon sea salt" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAOVND073ACVfffQGHl3kLWftkT2eQmIuHQ7-SwDHEXeyOSN_1M35Jq2wE5KMWwM0JAuE2jtGi7UVKVQpGzHRtXKQ-TqM7QaxY9Jp1_58QqNWBjsbRqBMbQlqejtC_eBwH1GlFM5xQXNB5nGSk6Fn23QuHQyECZKMpktR1zxVAQ1CR6RDm50V2BoMHzvbsgcMFOkhL_OliS4MTAxShaW7gkP_avCeVKkouH6Q8fAlPvV_kib5MxUjCzSgKqdjAZPj_YaR7gJVB60os"/>
+<div class="absolute top-4 right-4">
+<span class="bg-primary text-on-primary text-[10px] px-3 py-1 rounded-full uppercase tracking-widest font-bold shadow-sm">Chef's Choice</span>
+</div>
+</div>
+<h3 class="font-serif text-2xl text-primary mb-2">Maldon Midnight</h3>
+<div class="flex justify-between items-center">
+<span class="font-sans text-sm text-on-surface-variant">70% Cacao &amp; Smoked Salt</span>
+<span class="font-sans font-bold text-primary">₱175</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- MOA Location Section -->
+<section class="py-28 px-8 max-w-screen-2xl mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+<div class="space-y-10 order-2 lg:order-1">
+<div class="space-y-4">
+<span class="font-sans text-xs uppercase tracking-[0.2em] text-outline">Find Us</span>
+<h2 class="font-serif italic text-5xl text-primary leading-tight">Visit our Pâtisserie at Mall of Asia</h2>
+</div>
+<div class="space-y-8">
+<div class="flex items-start space-x-6">
+<span class="material-symbols-outlined text-primary-container mt-1">location_on</span>
+<div>
+<h4 class="font-sans font-bold text-sm tracking-widest uppercase mb-2">Address</h4>
+<p class="text-on-surface-variant">Level 1, Main Mall, Mall of Asia<br/>Pasay City, Metro Manila</p>
+</div>
+</div>
+<div class="flex items-start space-x-6">
+<span class="material-symbols-outlined text-primary-container mt-1">schedule</span>
+<div>
+<h4 class="font-sans font-bold text-sm tracking-widest uppercase mb-2">Hours</h4>
+<p class="text-on-surface-variant">Monday – Sunday<br/>10:00 AM – 10:00 PM</p>
+</div>
+</div>
+<div class="flex items-start space-x-6">
+<span class="material-symbols-outlined text-primary-container mt-1">call</span>
+<div>
+<h4 class="font-sans font-bold text-sm tracking-widest uppercase mb-2">Connect</h4>
+<p class="text-on-surface-variant">+63 (02) 8800-4567<br/>hello@theobroma.com.ph</p>
+</div>
+</div>
+</div>
+<button class="bg-primary hover:bg-primary-container text-on-primary px-10 py-4 rounded-lg font-sans text-sm tracking-widest transition-all duration-300 shadow-xl inline-flex items-center space-x-3">
+<span class="material-symbols-outlined">directions</span>
+<span>GET DIRECTIONS</span>
+</button>
+</div>
+<div class="order-1 lg:order-2 h-[500px] bg-surface-container-high rounded-xl overflow-hidden relative shadow-2xl">
+<img alt="Map Placeholder" class="w-full h-full object-cover grayscale opacity-40 mix-blend-multiply" data-alt="Stylized map showing Mall of Asia location in Pasay City" data-location="Pasay City" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-Ce6obBdiuWvp8AWHqR1RL3nCT9PW5SAPfKnhtzQa1qpR6QGtLIeDxoR9Fkmvi-s-Im4vahRCJBTcE6hX3AhTA1qw6J1ahVHMVTiK0rbfoDcSYCy2aj1yPnqQV81wqTeuZzH0ZvYAXzvykjslJHMqOK1viUUF6kikAIULuHYxx0bdjCcZpgpKdogfi4ZMJPLORQ5ygIjvEBlrX9-I76JTucyRdWGUs1YBW1ySOLzh7L2Iyf-oZrtPHyKteCTf_01fXNFn36DTdYU"/>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="bg-primary text-on-primary p-4 rounded-full shadow-2xl animate-bounce">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">location_on</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#f0ede9] dark:bg-[#141210] w-full pt-20 pb-10">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 px-12 max-w-screen-xl mx-auto">
+<div class="space-y-6">
+<div class="font-serif text-lg text-[#4E342E] dark:text-[#fcf9f4]">Theobroma</div>
+<p class="font-sans text-xs tracking-relaxed leading-6 text-[#827471] max-w-xs">
+                    Crafting moments of pure chocolate bliss since 2004. Our pâtisserie is a celebration of fine ingredients and artisanal devotion.
+                </p>
+</div>
+<div class="space-y-6">
+<h4 class="font-sans font-bold text-[10px] uppercase tracking-widest text-[#361f1a] dark:text-[#ece0dc]">Quick Links</h4>
+<ul class="space-y-3">
+<li><a class="font-sans text-xs tracking-relaxed leading-6 text-[#827471] hover:text-[#361f1a] transition-colors" href="#">Instagram</a></li>
+<li><a class="font-sans text-xs tracking-relaxed leading-6 text-[#827471] hover:text-[#361f1a] transition-colors" href="#">Facebook</a></li>
+<li><a class="font-sans text-xs tracking-relaxed leading-6 text-[#827471] hover:text-[#361f1a] transition-colors" href="#">Contact Us</a></li>
+</ul>
+</div>
+<div class="space-y-6">
+<h4 class="font-sans font-bold text-[10px] uppercase tracking-widest text-[#361f1a] dark:text-[#ece0dc]">Mall of Asia</h4>
+<p class="font-sans text-xs tracking-relaxed leading-6 text-[#827471]">
+                    MOA Hours: 10AM - 10PM<br/>
+                    Main Mall, Level 1<br/>
+                    Pasay City
+                </p>
+<div class="pt-4 flex space-x-4 opacity-80 hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-primary cursor-pointer">share</span>
+<span class="material-symbols-outlined text-primary cursor-pointer">mail</span>
+</div>
+</div>
+</div>
+<div class="mt-20 border-t border-outline-variant/10 pt-10 text-center">
+<p class="font-sans text-xs tracking-relaxed leading-6 text-[#827471]">© 2024 Theobroma Pâtisserie. Crafted with devotion.</p>
+</div>
+</footer>
+</body></html>
